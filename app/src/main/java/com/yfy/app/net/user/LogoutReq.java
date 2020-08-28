@@ -1,7 +1,6 @@
 package com.yfy.app.net.user;
 
 import com.yfy.base.Base;
-import com.yfy.base.Variables;
 import com.yfy.db.UserPreferences;
 import com.yfy.final_tag.TagFinal;
 import org.simpleframework.xml.Element;
@@ -17,7 +16,7 @@ public class LogoutReq {
 
 
     @Element(name = "session_key", required = false)
-    private String session_key= Variables.user.getSession_key();     ///
+    private String session_key= Base.user.getSession_key();     ///
 
     @Element(name = "andios", required = false)
     private String andios="and";

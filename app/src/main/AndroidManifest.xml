@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.yfy.rebirth">
+
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+
+
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 8.0 允许安装未知来源权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+            android:name="com.yfy.base.App"
+            android:allowBackup="true"
+            android:icon="@mipmap/rebirth_logo"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/rebirth_logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <!-- android:exported="false"  组件共享 -->
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.yfy.rebirth.fileProvider"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+                android:name="com.yfy.app.welcome.WelcomeActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppThemeInitial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.yfy.app.VsionDetailActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.WebActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+                android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+                android:name="com.yfy.app.ContentDialogEditActivity"
+                android:theme="@style/AppThemeDialog"
+                android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- app up data -->
+        <service android:name="com.yfy.app.auto_update.UploadDataService"/>
+        <activity
+            android:name="com.yfy.app.auto_update.UpDataDialogActivity"
+            android:theme="@style/AppThemeDialog"
+            />
+
+        <!-- ****************************极光推送**************************** -->
+
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+                android:name="com.yfy.jpush.MyReceiver"
+                android:enabled="true"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <!-- 小红点，处理 -->
+
+                <category android:name="com.yfy.rebirth"/>
+            </intent-filter>
+        </receiver>
+        <!--info-->
+        <activity
+            android:name="com.yfy.app.info_submit.activity.AuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.yfy.app.info_submit.activity.FormShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.yfy.app.info_submit.activity.FormWriteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.yfy.app.info_submit.activity.FormWriteItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!--album-->
+        <activity
+                android:name="com.yfy.app.album.AlbumOneActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme" />
+        <activity
+                android:name="com.yfy.app.album.AlbumAllActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme" />
+        <activity
+                android:name="com.yfy.app.album.SingePicShowActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme" />
+        <activity
+                android:name="com.yfy.app.album.MultPicShowActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"/>
+        <!-- login -->
+        <activity
+                android:name="com.yfy.app.login.PhoneCodectivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name="com.yfy.app.login.LoginRebirthActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name="com.yfy.app.login.AlterActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name="com.yfy.app.login.AlterCllActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"
+                android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+                android:name="com.yfy.app.RebirthMainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"/>
+
+        <!--tea_evaluate-->
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaValueActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaTagActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaEvaluateAddActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+                android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaEvaluateActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaEvaItemActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.RedactActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+                android:windowSoftInputMode="adjustPan|stateHidden"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.BarActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.ChartEvaluateActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.ChartDetailActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+        <activity
+                android:name="com.yfy.app.tea_evaluate.TeaTJMainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+        />
+
+        <!-- maintain -->
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainNewActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainNewAdminActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainNewAddActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainNewDetailActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainNewDetailAdminActivity"
+                android:exported="false"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.ChoiceTagActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.ChoiceOfficeActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.ChoiceGoodActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.maintainnew.MaintainDoingActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+                android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- atten -->
+        <activity
+                android:name="com.yfy.app.attennew.AttenNewActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.SubjectActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.AttenDoingActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.AttenNewDetailActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.AttenNewDetailAdminActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.AttenNewAdminActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat" />
+        <activity
+                android:name="com.yfy.app.attennew.AttenAddActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeCompat"
+                android:windowSoftInputMode="adjustPan|stateHidden" />
+
+    </application>
+
+</manifest>

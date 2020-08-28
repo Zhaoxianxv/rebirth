@@ -3,6 +3,7 @@ package com.yfy.app.net;
 
 import com.yfy.app.net.atten.*;
 import com.yfy.app.net.maintain.*;
+import com.yfy.app.net.tea_evaluate.*;
 import com.yfy.app.net.user.*;
 import com.yfy.base.Base;
 import com.yfy.final_tag.TagFinal;
@@ -24,10 +25,10 @@ public class ResBody {
     public NewBannerRes news_banner;
 
 
-    @Element(name = "getCurrentTermResponse", required = false)
+    @Element(name = TagFinal.GET_CURRENT_TERM+"Response", required = false)
     public GetTermRes getCurrentTermResponse;
 
-    @Element(name = "getnoticenumResponse", required = false)
+    @Element(name = TagFinal.GETNOTICENUM+"Response", required = false)
     public NticeNumRes getnoticenumResponse;
 
     @Element(name = TagFinal.GET_USER_ADMIN+"Response", required = false)
@@ -90,27 +91,25 @@ public class ResBody {
 //    public CUserRes cUserRes;
 
 
-    /**
-     * ----------------applied---------------------
-     */
-//    @Element(name = TagFinal.APPLIED_GET_PROJEDCT_STATE+"Response", required = false)
-//    public AppliedListRes appliedListRes;
-//
-//    @Element(name = TagFinal.APPLIED_ADMIN_LIST+"Response", required = false)
-//    public AppliedAdminListRes applied_admin_ListRes;
-//
-//    @Element(name = TagFinal.APPLIED_USER_LIST+"Response", required = false)
-//    public AppliedUserListRes applied_user_listRes;
-//
-//    @Element(name = TagFinal.APPLIED_GET_DETAIL+"Response", required = false)
-//    public AppliedItemRes applied_item_detail;
 
+    //----------------tea evaluate----------------------
 
-//
-//    @Element(name =  TagFinal.NOTICE_GET_TEA+"Response", required = false)
-//    public GetTeaRes get_contacts_teaRes;
-//
-//    @Element(name = TagFinal.NOTICE_GET_STU+"Response", required = false)
-//    public GetStuRes get_contacts_stuRes;
+    @Element(name = TagFinal.TEA_JUDGE_CLASS+"Response", required = false)
+    public JudgeAddRes judge_Response;
+
+    @Element(name =  TagFinal.TEA_JUDGE_STATISTICS_CLASS+"Response", required = false)
+    public JudgeTjRes judge_tj_Response;
+
+    @Element(name =  TagFinal.TEA_JUDGE_STATISTICS+"Response", required = false)
+    public JudgeChartRes judge_chart_Response;
+
+    @Element(name = TagFinal.TEA_JUDGE_YEAR+"Response", required = false)
+    public YearRes year_Response;
+
+    @Element(name =  TagFinal.TEA_ADD_PARAMETER+"Response", required = false)
+    public JudgeparaRes para_Response;
+
+    @Element(name = TagFinal.TEA_JUDGE_INFO+"Response", required = false)
+    public JudgeItemRes item_Response;
 
 }

@@ -1,0 +1,3500 @@
+{
+	"add_teacher_judge": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "year"
+	}, {
+		"paramType": "int",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "images"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}],
+
+
+	"get_teacher_judge_record_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "year"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"reset_password_password": [{
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "password"
+	}, {
+		"paramType": "string",
+		"paramName": "usertype"
+	}],
+	"resetpassword": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "oldpassword"
+	}, {
+		"paramType": "string",
+		"paramName": "newpassword"
+	}],
+	"set_Mobile": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "no"
+	}],
+	"save_dossier_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "teacherid"
+	}, {
+		"paramType": "string",
+		"paramName": "ids"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"get_dossier_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "teacherid"
+	}, {
+		"paramType": "string",
+		"paramName": "isadmin"
+	}],
+	"del_dossier_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "listid"
+	}],
+	"get_dossier_addlistinfo": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "listid"
+	}],
+	"save_dossier_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "teacherid"
+	}, {
+		"paramType": "string",
+		"paramName": "listid"
+	}, {
+		"paramType": "string",
+		"paramName": "ids"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"get_elective_course_by_id": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"add_elective_course": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "stuname"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"cancel_elective_course": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "stuname"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"get_elective_course": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"get_Maintain_byid_headmaster": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"review_funcRoom_record_headmaster": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"attendance_list_headmaster": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"getMaintain_headmaster": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"del_late": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"set_late_state": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "state"
+	}],
+	"add_late": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "addusername"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}],
+	"get_late_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "startdate"
+	}, {
+		"paramType": "string",
+		"paramName": "enddate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_late_list_admin": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "startdate"
+	}, {
+		"paramType": "string",
+		"paramName": "enddate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_late_list_headmaster": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "startdate"
+	}, {
+		"paramType": "string",
+		"paramName": "enddate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_complete_studentsResponse": [{
+		"paramType": "string",
+		"paramName": "get_complete_studentsResult"
+	}],
+	"get_studentByAnswer": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}, {
+		"paramType": "string",
+		"paramName": "subject_id"
+	}, {
+		"paramType": "string",
+		"paramName": "answer"
+	}],
+	"my_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"logistics_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_funcRoom_detail": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"submit_funcRoomnew": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "int",
+		"paramName": "room_id"
+	}, {
+		"paramType": "string",
+		"paramName": "time_name"
+	}, {
+		"paramType": "int",
+		"paramName": "device"
+	}, {
+		"paramType": "string",
+		"paramName": "devicewords"
+	}, {
+		"paramType": "int",
+		"paramName": "islogistics"
+	}, {
+		"paramType": "string",
+		"paramName": "logisticswords"
+	}, {
+		"paramType": "int",
+		"paramName": "typeid"
+	}, {
+		"paramType": "string",
+		"paramName": "description"
+	}],
+	"get_dynamic_byidResponse": [{
+		"paramType": "string",
+		"paramName": "get_dynamic_byidResult"
+	}],
+	"ancyclopedia_commentResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_commentResult"
+	}],
+	"sendmessageiosResponse": [{
+		"paramType": "string",
+		"paramName": "sendmessageiosResult"
+	}],
+	"get_class_dynamic_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "class_id"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"WB_get_tag": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"WB_delete": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"attendance_transmit": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}],
+	"attendance_single_byid": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"get_Maintain_byid_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"WB_add": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "int",
+		"paramName": "class_id"
+	}, {
+		"paramType": "string",
+		"paramName": "content_text"
+	}, {
+		"paramType": "string",
+		"paramName": "images"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "images_file"
+	}, {
+		"paramType": "int",
+		"paramName": "tag_id"
+	}],
+	"WB_did_praise": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "int",
+		"paramName": "praise"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"WB_did_reply": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "int",
+		"paramName": "pid"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"WB_get_reply": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"WB_delete_reply": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"WB_get_class": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "ismyself"
+	}, {
+		"paramType": "int",
+		"paramName": "class_id"
+	}, {
+		"paramType": "string",
+		"paramName": "tag_id"
+	}, {
+		"paramType": "string",
+		"paramName": "search"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"setMaintain_cdpx": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "dealstate"
+	}, {
+		"paramType": "int",
+		"paramName": "isout"
+	}, {
+		"paramType": "string",
+		"paramName": "money"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "delpictures"
+	}],
+	"setMaintain_flow_cdpx": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "delpictures"
+	}],
+	"delete_maintain": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"get_Maintain_user": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "dealstate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_Maintain_admin_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "dealstate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"getMaintainuser": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "dealstate"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_studentByAnswerResponse": [{
+		"paramType": "string",
+		"paramName": "get_studentByAnswerResult"
+	}],
+	"getMaintainclass_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"setMaintainclassid_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}],
+	"setMaintain_star_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "star"
+	}, {
+		"paramType": "int",
+		"paramName": "content"
+	}],
+	"setMaintain_admin_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "int",
+		"paramName": "Maintainid"
+	}, {
+		"paramType": "int",
+		"paramName": "classid"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}],
+	"setMaintainnew": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "dealstate"
+	}, {
+		"paramType": "int",
+		"paramName": "isout"
+	}, {
+		"paramType": "string",
+		"paramName": "money"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "delpictures"
+	}],
+	"is_close_remark": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_id"
+	}],
+	"get_single_examResponse": [{
+		"paramType": "string",
+		"paramName": "get_single_examResult"
+	}],
+	"send_noticeResponse": [{
+		"paramType": "string",
+		"paramName": "send_noticeResult"
+	}],
+	"isBossResponse": [{
+		"paramType": "string",
+		"paramName": "isBossResult"
+	}],
+	"getrep": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"delete_dynamicResponse": [{
+		"paramType": "string",
+		"paramName": "delete_dynamicResult"
+	}],
+	"get_is_submit": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"get_remarkByRemarkId": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_type"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_id"
+	}],
+	"set_remark_readResponse": [{
+		"paramType": "string",
+		"paramName": "set_remark_readResult"
+	}],
+	"isBoss": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"sendrep": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "nr"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "usertype"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}],
+	"query_funcRoomResponse": [{
+		"paramType": "string",
+		"paramName": "query_funcRoomResult"
+	}],
+	"getnotice": [{
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}],
+	"is_can_readResponse": [{
+		"paramType": "string",
+		"paramName": "is_can_readResult"
+	}],
+	"get_exam_statistics": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"ancyclopedia_list_firstResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_list_firstResult"
+	}],
+	"homework_stu_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "page"
+	}, {
+		"paramType": "string",
+		"paramName": "size"
+	}],
+	"del_my_funcRoomResponse": [{
+		"paramType": "string",
+		"paramName": "del_my_funcRoomResult"
+	}],
+	"getmenu": [{
+		"paramType": "string",
+		"paramName": "no"
+	}],
+	"get_notice_contentResponse": [{
+		"paramType": "string",
+		"paramName": "get_notice_contentResult"
+	}],
+	"delxwResponse": [{
+		"paramType": "string",
+		"paramName": "delxwResult"
+	}],
+	"send_homework": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "class_id"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "time"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "pictures_file"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures_content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "voice"
+	}, {
+		"paramType": "string",
+		"paramName": "isvoice"
+	}],
+	"removefavResponse": [{
+		"paramType": "string",
+		"paramName": "removefavResult"
+	}],
+	"ancyclopedia_list_last": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"adddyscore": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "score"
+	}, {
+		"paramType": "string",
+		"paramName": "datetime"
+	}],
+	"bmcx": [{
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "phone"
+	}],
+	"get_funcRoom_timeResponse": [{
+		"paramType": "string",
+		"paramName": "get_funcRoom_timeResult"
+	}],
+	"getwords": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"homework_my_listResponse": [{
+		"paramType": "string",
+		"paramName": "homework_my_listResult"
+	}],
+	"getqj": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "state"
+	}, {
+		"paramType": "int",
+		"paramName": "alluser"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"seekNews": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "no"
+	}, {
+		"paramType": "string",
+		"paramName": "keyword"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"add_class_dynamic_newsResponse": [{
+		"paramType": "string",
+		"paramName": "add_class_dynamic_newsResult"
+	}],
+	"get_exam_record": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "role_id"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"attendance_typeResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_typeResult"
+	}],
+	"set_homeworkResponse": [{
+		"paramType": "string",
+		"paramName": "set_homeworkResult"
+	}],
+	"delete_words": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"ancyclopedia_hotResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_hotResult"
+	}],
+	"homework_master_infoResponse": [{
+		"paramType": "string",
+		"paramName": "homework_master_infoResult"
+	}],
+	"get_class_web": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"get_class_all": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"submit_subject": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_name"
+	}, {
+		"paramType": "string",
+		"paramName": "choose"
+	}, {
+		"paramType": "string",
+		"paramName": "judge"
+	}, {
+		"paramType": "string",
+		"paramName": "subjective"
+	}],
+	"send_homeworkResponse": [{
+		"paramType": "string",
+		"paramName": "send_homeworkResult"
+	}],
+	"setwx": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}],
+	"get_resourceResponse": [{
+		"paramType": "string",
+		"paramName": "get_resourceResult"
+	}],
+	"getnewsrep": [{
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_class_webResponse": [{
+		"paramType": "string",
+		"paramName": "get_class_webResult"
+	}],
+	"isfav": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "newsid"
+	}],
+	"getdylistbyclass": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "datetime"
+	}],
+	"ancyclopedia_list_second": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"homework_stu_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "time"
+	}],
+	"attendance_resubmitResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_resubmitResult"
+	}],
+	"delete_dynamic_replay": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"getmailbyid": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"getrepResponse": [{
+		"paramType": "string",
+		"paramName": "getrepResult"
+	}],
+	"delete_attendance": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"attendance_submitcdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "start_time"
+	}, {
+		"paramType": "string",
+		"paramName": "duration"
+	}, {
+		"paramType": "string",
+		"paramName": "reason"
+	}, {
+		"paramType": "string",
+		"paramName": "table_plan"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}, {
+		"paramType": "string",
+		"paramName": "image"
+	}, {
+		"paramType": "string",
+		"paramName": "kqtype"
+	}],
+	"attendancelist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"attendance_list_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"attendance_review_list_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"attendance_did_review_syxx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "reply"
+	}, {
+		"paramType": "string",
+		"paramName": "table_plan"
+	}, {
+		"paramType": "int",
+		"paramName": "review_result"
+	}],
+	"cc_reward_timelineResponse": [{
+		"paramType": "string",
+		"paramName": "cc_reward_timelineResult"
+	}],
+	"attendance_approve": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"delxclistResponse": [{
+		"paramType": "string",
+		"paramName": "delxclistResult"
+	}],
+	"get_classroomResponse": [{
+		"paramType": "string",
+		"paramName": "get_classroomResult"
+	}],
+	"reply_words": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"reply_wordsResponse": [{
+		"paramType": "string",
+		"paramName": "reply_wordsResult"
+	}],
+	"getdepResponse": [{
+		"paramType": "string",
+		"paramName": "getdepResult"
+	}],
+	"getMyCommentResponse": [{
+		"paramType": "string",
+		"paramName": "getMyCommentResult"
+	}],
+	"get_class_dynamic_reply": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "dynamic_id"
+	}, {
+		"paramType": "string",
+		"paramName": "replay_id"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "my_reply_content"
+	}, {
+		"paramType": "string",
+		"paramName": "authname"
+	}, {
+		"paramType": "string",
+		"paramName": "authid"
+	}],
+	"words": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "email"
+	}, {
+		"paramType": "string",
+		"paramName": "tel"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"addqjResponse": [{
+		"paramType": "string",
+		"paramName": "addqjResult"
+	}],
+	"getnewslist": [{
+		"paramType": "string",
+		"paramName": "no"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}, {
+		"paramType": "string",
+		"paramName": "search"
+	}],
+	"setstuxx": [{
+		"paramType": "string",
+		"paramName": "stuid"
+	}, {
+		"paramType": "string",
+		"paramName": "birthday"
+	}, {
+		"paramType": "string",
+		"paramName": "byyey"
+	}, {
+		"paramType": "string",
+		"paramName": "dscz"
+	}, {
+		"paramType": "string",
+		"paramName": "fkszd"
+	}, {
+		"paramType": "string",
+		"paramName": "fqdh"
+	}, {
+		"paramType": "string",
+		"paramName": "fqxm"
+	}, {
+		"paramType": "string",
+		"paramName": "fqzd"
+	}, {
+		"paramType": "string",
+		"paramName": "fqdw"
+	}, {
+		"paramType": "string",
+		"paramName": "fqsj"
+	}, {
+		"paramType": "string",
+		"paramName": "fqzw"
+	}, {
+		"paramType": "string",
+		"paramName": "mqdh"
+	}, {
+		"paramType": "string",
+		"paramName": "mqxm"
+	}, {
+		"paramType": "string",
+		"paramName": "mqzd"
+	}, {
+		"paramType": "string",
+		"paramName": "mqdw"
+	}, {
+		"paramType": "string",
+		"paramName": "mqsj"
+	}, {
+		"paramType": "string",
+		"paramName": "mqzw"
+	}, {
+		"paramType": "string",
+		"paramName": "ljsw"
+	}, {
+		"paramType": "string",
+		"paramName": "qt"
+	}, {
+		"paramType": "string",
+		"paramName": "sex"
+	}, {
+		"paramType": "string",
+		"paramName": "sg"
+	}, {
+		"paramType": "string",
+		"paramName": "stuname"
+	}, {
+		"paramType": "string",
+		"paramName": "szdz"
+	}, {
+		"paramType": "string",
+		"paramName": "ydjn"
+	}, {
+		"paramType": "string",
+		"paramName": "yscn"
+	}, {
+		"paramType": "string",
+		"paramName": "yybd"
+	}, {
+		"paramType": "string",
+		"paramName": "tz"
+	}, {
+		"paramType": "string",
+		"paramName": "sfz"
+	}],
+	"getmailResponse": [{
+		"paramType": "string",
+		"paramName": "getmailResult"
+	}],
+	"addbaikdetailResponse": [{
+		"paramType": "string",
+		"paramName": "addbaikdetailResult"
+	}],
+	"getstuxx": [{
+		"paramType": "string",
+		"paramName": "stuid"
+	}],
+	"get_user_rightResponse": [{
+		"paramType": "string",
+		"paramName": "get_user_rightResult"
+	}],
+	"ancyclopedia_angelResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_angelResult"
+	}],
+	"getAdmNewsResponse": [{
+		"paramType": "string",
+		"paramName": "getAdmNewsResult"
+	}],
+	"removefav": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "usertype"
+	}],
+	"attendance_resubmit": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "start_time"
+	}, {
+		"paramType": "string",
+		"paramName": "duration"
+	}, {
+		"paramType": "string",
+		"paramName": "reason"
+	}, {
+		"paramType": "string",
+		"paramName": "table_plan"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}, {
+		"paramType": "string",
+		"paramName": "image"
+	}, {
+		"paramType": "string",
+		"paramName": "resetimage"
+	}, {
+		"paramType": "string",
+		"paramName": "kqtype"
+	}],
+	"get_complete_students": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"isOnlineResponse": [{
+		"paramType": "string",
+		"paramName": "isOnlineResult"
+	}],
+	"getbaiketypeResponse": [{
+		"paramType": "string",
+		"paramName": "getbaiketypeResult"
+	}],
+	"sendmessage": [{
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "message"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "andios"
+	}, {
+		"paramType": "string",
+		"paramName": "channel_id"
+	}],
+	"get_classroom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"receive_notice_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_master_infoResponse": [{
+		"paramType": "string",
+		"paramName": "get_master_infoResult"
+	}],
+	"homework_tea_infoResponse": [{
+		"paramType": "string",
+		"paramName": "homework_tea_infoResult"
+	}],
+	"sendmessageResponse": [{
+		"paramType": "string",
+		"paramName": "sendmessageResult"
+	}],
+	"homework_stu_listResponse": [{
+		"paramType": "string",
+		"paramName": "homework_stu_listResult"
+	}],
+	"getvotelist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"send_remark_pictures": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "subject_id"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_id"
+	}, {
+		"paramType": "string",
+		"paramName": "send_to"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "boolean",
+		"paramName": "is_can_close"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"get_exam_recordResponse": [{
+		"paramType": "string",
+		"paramName": "get_exam_recordResult"
+	}],
+	"getqjResponse": [{
+		"paramType": "string",
+		"paramName": "getqjResult"
+	}],
+	"sendnoticeResponse": [{
+		"paramType": "string",
+		"paramName": "sendnoticeResult"
+	}],
+	"ancyclopedia_praise": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}],
+	"attendance_resubmit1Response": [{
+		"paramType": "string",
+		"paramName": "attendance_resubmit1Result"
+	}],
+	"addfavResponse": [{
+		"paramType": "string",
+		"paramName": "addfavResult"
+	}],
+	"get_user_dynamic_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_single_exam": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"getuserResponse": [{
+		"paramType": "string",
+		"paramName": "getuserResult"
+	}],
+	"review_funcRoom_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"getteacherlistResponse": [{
+		"paramType": "string",
+		"paramName": "getteacherlistResult"
+	}],
+	"del_my_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"getsupplieslist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"adddyscoreResponse": [{
+		"paramType": "string",
+		"paramName": "adddyscoreResult"
+	}],
+	"installCommentStatusResponse": [{
+		"paramType": "string",
+		"paramName": "installCommentStatusResult"
+	}],
+	"loginResponse": [{
+		"paramType": "string",
+		"paramName": "loginResult"
+	}],
+	"attendance_did_review": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "reply"
+	}, {
+		"paramType": "int",
+		"paramName": "review_result"
+	}],
+	"get_funcRoom_time": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"review_funcRoom_contentResponse": [{
+		"paramType": "string",
+		"paramName": "review_funcRoom_contentResult"
+	}],
+	"attendance_approveResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_approveResult"
+	}],
+	"get_new_remarkResponse": [{
+		"paramType": "string",
+		"paramName": "get_new_remarkResult"
+	}],
+	"del_homeworkResponse": [{
+		"paramType": "string",
+		"paramName": "del_homeworkResult"
+	}],
+	"get_myclass_tea": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"get_class_dynamic_replyResponse": [{
+		"paramType": "string",
+		"paramName": "get_class_dynamic_replyResult"
+	}],
+	"getclassNews": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "no"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}, {
+		"paramType": "string",
+		"paramName": "search"
+	}],
+	"setwxclassidResponse": [{
+		"paramType": "string",
+		"paramName": "setwxclassidResult"
+	}],
+	"addReport": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "reason"
+	}],
+	"get_new_remark": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"homework_tea_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "issh"
+	}, {
+		"paramType": "string",
+		"paramName": "time"
+	}],
+	"getdylist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "datetime"
+	}],
+	"is_can_read": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "resource_id"
+	}],
+	"review_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "string",
+		"paramName": "reply"
+	}],
+	"receive_notice_listResponse": [{
+		"paramType": "string",
+		"paramName": "receive_notice_listResult"
+	}],
+	"get_exam_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"getadminclassmenu": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"getbaiketype": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "int",
+		"paramName": "issh"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"getxclist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"delfavResponse": [{
+		"paramType": "string",
+		"paramName": "delfavResult"
+	}],
+	"getMonthlyassessmentlist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "staffid"
+	}, {
+		"paramType": "int",
+		"paramName": "month"
+	}, {
+		"paramType": "int",
+		"paramName": "year"
+	}, {
+		"paramType": "int",
+		"paramName": "termid"
+	}, {
+		"paramType": "string",
+		"paramName": "code"
+	}],
+	"addwx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "nr"
+	}, {
+		"paramType": "string",
+		"paramName": "address"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"get_exerciseResponse": [{
+		"paramType": "string",
+		"paramName": "get_exerciseResult"
+	}],
+	"get_new_examResponse": [{
+		"paramType": "string",
+		"paramName": "get_new_examResult"
+	}],
+	"delete_wordsResponse": [{
+		"paramType": "string",
+		"paramName": "delete_wordsResult"
+	}],
+	"submit_exam": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}, {
+		"paramType": "string",
+		"paramName": "choose"
+	}, {
+		"paramType": "string",
+		"paramName": "judge"
+	}, {
+		"paramType": "string",
+		"paramName": "subjective_file"
+	}, {
+		"paramType": "string",
+		"paramName": "subjective_txt"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"sendmailResponse": [{
+		"paramType": "string",
+		"paramName": "sendmailResult"
+	}],
+	"homework_stu_infoResponse": [{
+		"paramType": "string",
+		"paramName": "homework_stu_infoResult"
+	}],
+	"getnewmailnumResponse": [{
+		"paramType": "string",
+		"paramName": "getnewmailnumResult"
+	}],
+	"get_exam_paperResponse": [{
+		"paramType": "string",
+		"paramName": "get_exam_paperResult"
+	}],
+	"cc_send_rewardResponse": [{
+		"paramType": "string",
+		"paramName": "cc_send_rewardResult"
+	}],
+	"get_exam_paper": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classroom_id"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"delqj": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"cc_get_reward_rankResponse": [{
+		"paramType": "string",
+		"paramName": "cc_get_reward_rankResult"
+	}],
+	"ancyclopedia_list_first": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"sendnotice": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "mess"
+	}],
+	"delqjResponse": [{
+		"paramType": "string",
+		"paramName": "delqjResult"
+	}],
+	"my_funcRoomResponse": [{
+		"paramType": "string",
+		"paramName": "my_funcRoomResult"
+	}],
+	"checkpass": [{
+		"paramType": "string",
+		"paramName": "pass"
+	}],
+	"addsuppliesResponse": [{
+		"paramType": "string",
+		"paramName": "addsuppliesResult"
+	}],
+	"get_remarkByRemarkIdResponse": [{
+		"paramType": "string",
+		"paramName": "get_remarkByRemarkIdResult"
+	}],
+	"vote": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "realname"
+	}, {
+		"paramType": "string",
+		"paramName": "examid"
+	}, {
+		"paramType": "string",
+		"paramName": "votecontent"
+	}],
+	"manqj": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"get_student_resultResponse": [{
+		"paramType": "string",
+		"paramName": "get_student_resultResult"
+	}],
+	"get_myclass_teaResponse": [{
+		"paramType": "string",
+		"paramName": "get_myclass_teaResult"
+	}],
+	"manqjResponse": [{
+		"paramType": "string",
+		"paramName": "manqjResult"
+	}],
+	"seekNewsResponse": [{
+		"paramType": "string",
+		"paramName": "seekNewsResult"
+	}],
+	"ancyclopedia_comment": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}, {
+		"paramType": "string",
+		"paramName": "images_content"
+	}, {
+		"paramType": "string",
+		"paramName": "resetimage"
+	}, {
+		"paramType": "string",
+		"paramName": "angel"
+	}, {
+		"paramType": "string",
+		"paramName": "angel_id"
+	}],
+	"ancyclopedia_count": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"homework_master_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "issh"
+	}, {
+		"paramType": "string",
+		"paramName": "page"
+	}, {
+		"paramType": "string",
+		"paramName": "size"
+	}],
+	"review_funcRoomResponse": [{
+		"paramType": "string",
+		"paramName": "review_funcRoomResult"
+	}],
+	"ancyclopedia_comment_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "string",
+		"paramName": "angelid"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"getkb": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"homework_master_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "issh"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}],
+	"addbaikdetail": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}, {
+		"paramType": "string",
+		"paramName": "image"
+	}, {
+		"paramType": "string",
+		"paramName": "resetimage"
+	}],
+	"get_dynamic_byid": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "dynamicid"
+	}],
+	"setwxclassid": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"send_notice_contenResponse": [{
+		"paramType": "string",
+		"paramName": "send_notice_contenResult"
+	}],
+	"get_notice_readstateResponse": [{
+		"paramType": "string",
+		"paramName": "get_notice_readstateResult"
+	}],
+	"get_remarkBySubjectId": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_type"
+	}, {
+		"paramType": "string",
+		"paramName": "subject_id"
+	}],
+	"getxclistResponse": [{
+		"paramType": "string",
+		"paramName": "getxclistResult"
+	}],
+	"review_funcRoom_recordResponse": [{
+		"paramType": "string",
+		"paramName": "review_funcRoom_recordResult"
+	}],
+	"get_contacts_stu": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"get_user_dynamic_listResponse": [{
+		"paramType": "string",
+		"paramName": "get_user_dynamic_listResult"
+	}],
+	"bmcxResponse": [{
+		"paramType": "string",
+		"paramName": "bmcxResult"
+	}],
+	"getbjResponse": [{
+		"paramType": "string",
+		"paramName": "getbjResult"
+	}],
+	"getteacherlist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "termid"
+	}, {
+		"paramType": "string",
+		"paramName": "code"
+	}],
+	"submit_examResponse": [{
+		"paramType": "string",
+		"paramName": "submit_examResult"
+	}],
+	"ancyclopedia_angel": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_exam_isend": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"logout": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "andios"
+	}, {
+		"paramType": "string",
+		"paramName": "apikey"
+	}],
+	"getadminclassmenuResponse": [{
+		"paramType": "string",
+		"paramName": "getadminclassmenuResult"
+	}],
+	"sendmessageios": [{
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "message"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "andios"
+	}, {
+		"paramType": "string",
+		"paramName": "channel_id"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "mess"
+	}],
+	"getfavResponse": [{
+		"paramType": "string",
+		"paramName": "getfavResult"
+	}],
+	"get_contacts_stuResponse": [{
+		"paramType": "string",
+		"paramName": "get_contacts_stuResult"
+	}],
+	"getpagewords": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"get_funcRoom_nameResponse": [{
+		"paramType": "string",
+		"paramName": "get_funcRoom_nameResult"
+	}],
+	"submit_subjectResponse": [{
+		"paramType": "string",
+		"paramName": "submit_subjectResult"
+	}],
+	"addassessmentscore": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "staffid"
+	}, {
+		"paramType": "int",
+		"paramName": "month"
+	}, {
+		"paramType": "string",
+		"paramName": "score"
+	}, {
+		"paramType": "int",
+		"paramName": "year"
+	}, {
+		"paramType": "int",
+		"paramName": "termid"
+	}, {
+		"paramType": "string",
+		"paramName": "code"
+	}],
+	"addbaiketypeResponse": [{
+		"paramType": "string",
+		"paramName": "addbaiketypeResult"
+	}],
+	"cc_get_reward_rank": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"add_newsResponse": [{
+		"paramType": "string",
+		"paramName": "add_newsResult"
+	}],
+	"getwxResponse": [{
+		"paramType": "string",
+		"paramName": "getwxResult"
+	}],
+	"getclassNewsResponse": [{
+		"paramType": "string",
+		"paramName": "getclassNewsResult"
+	}],
+	"getscroll_pictureResponse": [{
+		"paramType": "string",
+		"paramName": "getscroll_pictureResult"
+	}],
+	"del_homework": [{
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"is_close_remarkResponse": [{
+		"paramType": "string",
+		"paramName": "is_close_remarkResult"
+	}],
+	"getCurrentTermResponse": [{
+		"paramType": "string",
+		"paramName": "getCurrentTermResult"
+	}],
+	"add_class_dynamic_news": [{
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"attendance_resubmit1": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "start_time"
+	}, {
+		"paramType": "string",
+		"paramName": "duration"
+	}, {
+		"paramType": "string",
+		"paramName": "reason"
+	}, {
+		"paramType": "string",
+		"paramName": "table_plan"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "image_file"
+	}, {
+		"paramType": "string",
+		"paramName": "image"
+	}, {
+		"paramType": "string",
+		"paramName": "resetimage"
+	}, {
+		"paramType": "string",
+		"paramName": "kqtype"
+	}],
+	"addbaiketype": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}],
+	"getqjtype": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"verifybaiketype": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "issh"
+	}],
+	"getbaikelistResponse": [{
+		"paramType": "string",
+		"paramName": "getbaikelistResult"
+	}],
+	"getnewslistResponse": [{
+		"paramType": "string",
+		"paramName": "getnewslistResult"
+	}],
+	"attendance_review_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "int",
+		"paramName": "status"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_student_result": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "student_id"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}],
+	"getadminmenuResponse": [{
+		"paramType": "string",
+		"paramName": "getadminmenuResult"
+	}],
+	"query_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "int",
+		"paramName": "room_id"
+	}],
+	"addassessmentscoreResponse": [{
+		"paramType": "string",
+		"paramName": "addassessmentscoreResult"
+	}],
+	"cc_send_reward": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "class_id"
+	}, {
+		"paramType": "string",
+		"paramName": "students_id"
+	}, {
+		"paramType": "string",
+		"paramName": "star"
+	}, {
+		"paramType": "string",
+		"paramName": "reason_text"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}],
+	"get_notice_content": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"login": [{
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "password"
+	}, {
+		"paramType": "string",
+		"paramName": "role_id"
+	}, {
+		"paramType": "string",
+		"paramName": "appid"
+	}, {
+		"paramType": "string",
+		"paramName": "andios"
+	}],
+	"getstuxxResponse": [{
+		"paramType": "string",
+		"paramName": "getstuxxResult"
+	}],
+	"get_resource_class": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "int",
+		"paramName": "gradeid"
+	}],
+	"get_resource_classResponse": [{
+		"paramType": "string",
+		"paramName": "get_resource_classResult"
+	}],
+	"get_exercise": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "keyword"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"attendance_did_reviewResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_did_reviewResult"
+	}],
+	"getsupplieslistResponse": [{
+		"paramType": "string",
+		"paramName": "getsupplieslistResult"
+	}],
+	"get_new_exam": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"delfav": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "favid"
+	}],
+	"installNewsStatuResponse": [{
+		"paramType": "string",
+		"paramName": "installNewsStatuResult"
+	}],
+	"delete_dynamic": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"sendmail": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "receiverid"
+	}, {
+		"paramType": "string",
+		"paramName": "receiveruser"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"ancyclopedia_hot": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_attendance_review_count": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"attendance_type": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"ancyclopedia_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "search"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"sendrepResponse": [{
+		"paramType": "string",
+		"paramName": "sendrepResult"
+	}],
+	"get_homework_subject": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"send_notice_conten": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"set_homework": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "issh"
+	}],
+	"addReportResponse": [{
+		"paramType": "string",
+		"paramName": "addReportResult"
+	}],
+	"get_class_dynamic_listResponse": [{
+		"paramType": "string",
+		"paramName": "get_class_dynamic_listResult"
+	}],
+	"getkbResponse": [{
+		"paramType": "string",
+		"paramName": "getkbResult"
+	}],
+	"getwx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "ishqadmin"
+	}, {
+		"paramType": "int",
+		"paramName": "type"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_class_dynamic_praiseResponse": [{
+		"paramType": "string",
+		"paramName": "get_class_dynamic_praiseResult"
+	}],
+	"addphoto": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "filename"
+	}],
+	"getdep": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"delete_dynamic_replayResponse": [{
+		"paramType": "string",
+		"paramName": "delete_dynamic_replayResult"
+	}],
+	"removeapp": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "appid"
+	}, {
+		"paramType": "string",
+		"paramName": "andios"
+	}],
+	"get_homework_subjectResponse": [{
+		"paramType": "string",
+		"paramName": "get_homework_subjectResult"
+	}],
+	"get_exam_infoResponse": [{
+		"paramType": "string",
+		"paramName": "get_exam_infoResult"
+	}],
+	"submit_funcRoom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "int",
+		"paramName": "room_id"
+	}, {
+		"paramType": "string",
+		"paramName": "time_name"
+	}, {
+		"paramType": "string",
+		"paramName": "description"
+	}],
+	"ancyclopedia_countResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_countResult"
+	}],
+	"get_is_submitResponse": [{
+		"paramType": "string",
+		"paramName": "get_is_submitResult"
+	}],
+	"setwxResponse": [{
+		"paramType": "string",
+		"paramName": "setwxResult"
+	}],
+	"getvotebyidResponse": [{
+		"paramType": "string",
+		"paramName": "getvotebyidResult"
+	}],
+	"ancyclopedia_list_lastResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_list_lastResult"
+	}],
+	"getmenuResponse": [{
+		"paramType": "string",
+		"paramName": "getmenuResult"
+	}],
+	"review_funcRoom_content": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "time"
+	}, {
+		"paramType": "int",
+		"paramName": "room_id"
+	}],
+	"verifybaikelistResponse": [{
+		"paramType": "string",
+		"paramName": "verifybaikelistResult"
+	}],
+	"getMyComment": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"addsupplies": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "bz"
+	}],
+	"homework_master_listResponse": [{
+		"paramType": "string",
+		"paramName": "homework_master_listResult"
+	}],
+	"isfavResponse": [{
+		"paramType": "string",
+		"paramName": "isfavResult"
+	}],
+	"get_remarkBySubjectIdResponse": [{
+		"paramType": "string",
+		"paramName": "get_remarkBySubjectIdResult"
+	}],
+	"get_exam_statisticsResponse": [{
+		"paramType": "string",
+		"paramName": "get_exam_statisticsResult"
+	}],
+	"addwxResponse": [{
+		"paramType": "string",
+		"paramName": "addwxResult"
+	}],
+	"getfav": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"read_notice": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"ancyclopedia_listResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_listResult"
+	}],
+	"attendancelistResponse": [{
+		"paramType": "string",
+		"paramName": "attendancelistResult"
+	}],
+	"read_noticeResponse": [{
+		"paramType": "string",
+		"paramName": "read_noticeResult"
+	}],
+	"attendance_timetable": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"homework_my_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "issh"
+	}, {
+		"paramType": "string",
+		"paramName": "page"
+	}, {
+		"paramType": "string",
+		"paramName": "size"
+	}],
+	"getnewmailnum": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"send_remark_picturesResponse": [{
+		"paramType": "string",
+		"paramName": "send_remark_picturesResult"
+	}],
+	"ancyclopedia_list_secondResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_list_secondResult"
+	}],
+	"getmail": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_funcRoom_name": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"delsuplist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"edit_homework": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "time"
+	}, {
+		"paramType": "string",
+		"paramName": "save_picture"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "pictures_file"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures_content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "voice"
+	}, {
+		"paramType": "string",
+		"paramName": "isvoice"
+	}],
+	"getMonthlyassessmentlistResponse": [{
+		"paramType": "string",
+		"paramName": "getMonthlyassessmentlistResult"
+	}],
+	"send_notice_list": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"close_remarkResponse": [{
+		"paramType": "string",
+		"paramName": "close_remarkResult"
+	}],
+	"set_remark_read": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_id"
+	}],
+	"getnewsrepResponse": [{
+		"paramType": "string",
+		"paramName": "getnewsrepResult"
+	}],
+	"getbaikelist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "searchkey"
+	}, {
+		"paramType": "string",
+		"paramName": "pid"
+	}, {
+		"paramType": "int",
+		"paramName": "issh"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_notice_readstate": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "id"
+	}],
+	"installNewsStatu": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "state"
+	}],
+	"change_classroomResponse": [{
+		"paramType": "string",
+		"paramName": "change_classroomResult"
+	}],
+	"voteResponse": [{
+		"paramType": "string",
+		"paramName": "voteResult"
+	}],
+	"getAdmNews": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "no"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}, {
+		"paramType": "string",
+		"paramName": "search"
+	}],
+	"addxclistResponse": [{
+		"paramType": "string",
+		"paramName": "addxclistResult"
+	}],
+	"getuser": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "depid"
+	}],
+	"getdylistbyclassResponse": [{
+		"paramType": "string",
+		"paramName": "getdylistbyclassResult"
+	}],
+	"getmailbyidResponse": [{
+		"paramType": "string",
+		"paramName": "getmailbyidResult"
+	}],
+	"cc_get_student_infoResponse": [{
+		"paramType": "string",
+		"paramName": "cc_get_student_infoResult"
+	}],
+	"submit_funcRoomResponse": [{
+		"paramType": "string",
+		"paramName": "submit_funcRoomResult"
+	}],
+	"get_user_right": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"getvotebyid": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"cc_reward_timeline": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "students_id"
+	}],
+	"getnoticeResponse": [{
+		"paramType": "string",
+		"paramName": "getnoticeResult"
+	}],
+	"get_exam_isendResponse": [{
+		"paramType": "string",
+		"paramName": "get_exam_isendResult"
+	}],
+	"getscroll_picture": [{
+		"paramType": "string",
+		"paramName": "no"
+	}],
+	"review_funcRoom_record": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"checkpassResponse": [{
+		"paramType": "boolean",
+		"paramName": "checkpassResult"
+	}],
+	"ancyclopedia_praiseResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_praiseResult"
+	}],
+	"getAdmComment": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"getbj": [],
+	"isOnline": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"delxclist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"getvotelistResponse": [{
+		"paramType": "string",
+		"paramName": "getvotelistResult"
+	}],
+	"getqjtypeResponse": [{
+		"paramType": "string",
+		"paramName": "getqjtypeResult"
+	}],
+	"verifybaiketypeResponse": [{
+		"paramType": "string",
+		"paramName": "verifybaiketypeResult"
+	}],
+	"getadminmenu": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"wordsResponse": [{
+		"paramType": "string",
+		"paramName": "wordsResult"
+	}],
+	"getpagewordsResponse": [{
+		"paramType": "string",
+		"paramName": "getpagewordsResult"
+	}],
+	"verifybaikelist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "int",
+		"paramName": "issh"
+	}],
+	"change_classroom": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classroom_id"
+	}],
+	"review_funcRoom_listResponse": [{
+		"paramType": "string",
+		"paramName": "review_funcRoom_listResult"
+	}],
+	"addxclist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "suppid"
+	}, {
+		"paramType": "string",
+		"paramName": "number"
+	}, {
+		"paramType": "string",
+		"paramName": "bz"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"get_master_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"getAdmCommentResponse": [{
+		"paramType": "string",
+		"paramName": "getAdmCommentResult"
+	}],
+	"send_notice_listResponse": [{
+		"paramType": "string",
+		"paramName": "send_notice_listResult"
+	}],
+	"getdylistResponse": [{
+		"paramType": "string",
+		"paramName": "getdylistResult"
+	}],
+	"getnewmail": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "page"
+	}, {
+		"paramType": "int",
+		"paramName": "size"
+	}],
+	"get_resource": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "type"
+	}, {
+		"paramType": "string",
+		"paramName": "role_id"
+	}, {
+		"paramType": "string",
+		"paramName": "classroom_id"
+	}, {
+		"paramType": "string",
+		"paramName": "keyword"
+	}, {
+		"paramType": "int",
+		"paramName": "pagesize"
+	}, {
+		"paramType": "int",
+		"paramName": "pagecount"
+	}],
+	"ancyclopedia_comment_listResponse": [{
+		"paramType": "string",
+		"paramName": "ancyclopedia_comment_listResult"
+	}],
+	"edit_homeworkResponse": [{
+		"paramType": "string",
+		"paramName": "edit_homeworkResult"
+	}],
+	"send_examResponse": [{
+		"paramType": "string",
+		"paramName": "send_examResult"
+	}],
+	"get_contacts_teaResponse": [{
+		"paramType": "string",
+		"paramName": "get_contacts_teaResult"
+	}],
+	"getCurrentTerm": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "code"
+	}],
+	"get_class_dynamic_praise": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "dynamic_id"
+	}],
+	"add_news": [{
+		"paramType": "string",
+		"paramName": "classid"
+	}, {
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}],
+	"send_notice": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "name"
+	}, {
+		"paramType": "string",
+		"paramName": "receiverid"
+	}, {
+		"paramType": "string",
+		"paramName": "receiveruser"
+	}, {
+		"paramType": "string",
+		"paramName": "title"
+	}, {
+		"paramType": "string",
+		"paramName": "content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "pictures_file"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures_content"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "voice_file"
+	}, {
+		"paramType": "string",
+		"paramName": "voice_content"
+	}],
+	"send_exam": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classroom_id"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_id"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_time"
+	}, {
+		"paramType": "string",
+		"paramName": "exam_name"
+	}],
+	"addMaintainnew_cdpx": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "int",
+		"paramName": "dealuser"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "nr"
+	}, {
+		"paramType": "string",
+		"paramName": "address"
+	}, {
+		"paramType": "string",
+		"paramName": "username"
+	}, {
+		"paramType": "string",
+		"paramName": "pictures"
+	}, {
+		"paramType": "base64Binary",
+		"paramName": "fileContext"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"installCommentStatus": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "state"
+	}],
+	"addfav": [{
+		"paramType": "string",
+		"paramName": "id"
+	}, {
+		"paramType": "string",
+		"paramName": "userid"
+	}, {
+		"paramType": "string",
+		"paramName": "usertype"
+	}],
+	"cc_get_student_info": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "classid"
+	}],
+	"removeappResponse": [{
+		"paramType": "string",
+		"paramName": "removeappResult"
+	}],
+	"attendance_review_listResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_review_listResult"
+	}],
+	"getwordsResponse": [{
+		"paramType": "string",
+		"paramName": "getwordsResult"
+	}],
+	"close_remark": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "remark_id"
+	}],
+	"attendance_timetableResponse": [{
+		"paramType": "string",
+		"paramName": "attendance_timetableResult"
+	}],
+	"get_contacts_tea": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"getnewmailResponse": [{
+		"paramType": "string",
+		"paramName": "getnewmailResult"
+	}],
+	"gettermlist": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "code"
+	}],
+	"setstuxxResponse": [{
+		"paramType": "string",
+		"paramName": "setstuxxResult"
+	}],
+	"delsuplistResponse": [{
+		"paramType": "string",
+		"paramName": "delsuplistResult"
+	}],
+	"delxw": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "id"
+	}],
+	"getMaintainclass": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}],
+	"addqj": [{
+		"paramType": "string",
+		"paramName": "session_key"
+	}, {
+		"paramType": "string",
+		"paramName": "date"
+	}, {
+		"paramType": "string",
+		"paramName": "nr"
+	}, {
+		"paramType": "string",
+		"paramName": "day"
+	}, {
+		"paramType": "string",
+		"paramName": "kqtype"
+	}]
+}

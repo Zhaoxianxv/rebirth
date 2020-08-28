@@ -192,30 +192,30 @@ public interface InterfaceApi {
     /**
      * -----------------------tea评测--------------------------
      */
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_JUDGE_CLASS})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> teacher_judge_class(@Body ReqTeaEnv Envelope);
-//
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_JUDGE_STATISTICS_CLASS})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> judge_tj_class(@Body ReqTeaEnv Envelope);
-//
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_JUDGE_STATISTICS})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> judge_statistics(@Body ReqTeaEnv Envelope);
-//
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_JUDGE_YEAR})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> judge_year(@Body ReqTeaEnv Envelope);
-//
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_ADD_PARAMETER})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> judge_item(@Body ReqTeaEnv Envelope);
-//
-//
-//    @Headers({TagFinal.Content_Type, TagFinal.SOAP_ACTION+TagFinal.TEA_JUDGE_INFO})
-//    @POST(TagFinal.POST_URI)
-//    Call<ResTeaEnv> item_info(@Body ReqTeaEnv Envelope);
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_JUDGE_CLASS})
+    @POST(Base.POST_URI)
+    Call<ResEnv> teacher_judge_class(@Body ReqEnv Envelope);
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_JUDGE_STATISTICS_CLASS})
+    @POST(Base.POST_URI)
+    Call<ResEnv> judge_tj_class(@Body ReqEnv Envelope);
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_JUDGE_STATISTICS})
+    @POST(Base.POST_URI)
+    Call<ResEnv> judge_statistics(@Body ReqEnv Envelope);
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_JUDGE_YEAR})
+    @POST(Base.POST_URI)
+    Call<ResEnv> judge_year(@Body ReqEnv Envelope);
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_ADD_PARAMETER})
+    @POST(Base.POST_URI)
+    Call<ResEnv> judge_item(@Body ReqEnv Envelope);
+
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.TEA_JUDGE_INFO})
+    @POST(Base.POST_URI)
+    Call<ResEnv> item_info(@Body ReqEnv Envelope);
 //
 //
 //    /**

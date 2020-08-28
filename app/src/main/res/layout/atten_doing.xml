@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.yfy.view.SQToolBar style="@style/App_SQToolbar"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+                <EditText
+                    android:id="@+id/atten_doing_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_150dp"
+                    android:hint="审批备注"
+                    android:background="@color/White"
+                    android:gravity="start"
+                    android:padding="@dimen/margin_5dp"
+                    android:textSize="@dimen/textsize7"
+                />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:background="@color/Gainsboro"
+                android:textSize="@dimen/textsize7"
+                android:text="设置请假状态"/>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White">
+                <TextView
+                    android:id="@+id/atten_state_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textsize9"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:text="同意请假"
+                    android:textColor="@color/Gray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@color/Gainsboro"/>
+                <TextView
+                    android:id="@+id/atten_state_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:textSize="@dimen/textsize9"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:text="驳回请假"
+                    android:textColor="@color/Gray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@color/Gainsboro"/>
+                <TextView
+                    android:id="@+id/atten_state_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:textSize="@dimen/textsize9"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:text="请假结束(销假)"
+                    android:textColor="@color/Gray"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

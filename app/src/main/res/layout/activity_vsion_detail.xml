@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    tools:context="com.yfy.app.VsionDetailActivity">
+
+    <com.yfy.view.SQToolBar style="@style/App_SQToolbar"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/login_logo"
+        android:padding="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/textsize14"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:text="成都市新生路小学"
+        android:textColor="@color/app_color_bg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址：成都武侯区新生路50号"
+        android:gravity="center"
+        android:textColor="@color/DarkGray"
+        android:textSize="@dimen/textsize9"
+        android:layout_marginTop="@dimen/margin_30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系电话：028-85030159"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/canlendar_text_color"
+        android:textSize="@dimen/textsize9"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版权所有 © 成都市新生路小学校"
+        android:gravity="center"
+        android:textColor="@color/DarkGray"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:textSize="@dimen/textsize6"
+        />
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:gravity="center"
+        android:textColor="@color/DarkGray"
+        android:textSize="@dimen/textsize6"
+        android:text="(Version 2.0)" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/version_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:text="隐私声明"
+        android:gravity="center"
+        android:textColor="@color/app_color_bg"
+        android:autoLink="all"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/textsize7"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright(c) 成都市新生路小学.All rights reserved."
+        android:gravity="center"
+        android:textColor="@color/DimGray"
+        android:textSize="@dimen/textsize5"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        />
+</LinearLayout>

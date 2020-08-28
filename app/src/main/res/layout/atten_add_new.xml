@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/WhiteSmoke"
+              android:orientation="vertical">
+
+    <com.yfy.view.SQToolBar style="@style/App_SQToolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteSmoke"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@drawable/layer_top_bottom_grayline_whitebg"
+                android:orientation="vertical"
+            >
+                <EditText
+                    android:id="@+id/leave_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="@dimen/margin_100dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:textSize="@dimen/textsize7"
+                    android:padding="@dimen/margin_5dp"
+                    android:hint="点击说明请假原因..." />
+                <com.yfy.view.multi.MultiPictureView
+                    android:id="@+id/atten_add_mult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    app:editable="true"
+                    app:max="9"
+                    app:ratio="1"
+                    app:space="2dp"
+                    app:span="4" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/layer_top_bottom_grayline_whitebg"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="审批人"
+                    android:textColor="@color/app_color_bg" />
+
+                <TextView
+                    android:id="@+id/atten_admin_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_black_rigth"
+                    android:gravity="right|center_vertical"
+                    android:drawableTint="@color/Gainsboro"
+                    android:paddingRight="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/date_lila"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/layer_top_bottom_grayline_whitebg"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="开始时间"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/app_color_bg" />
+
+                <TextView
+                    android:id="@+id/leave_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/black"
+                    android:drawableRight="@drawable/ic_black_rigth"
+                    android:drawableTint="@color/Gainsboro"
+                />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/layer_top_bottom_grayline_whitebg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请假天数(天)"
+                    android:textColor="@color/app_color_bg" />
+
+                <EditText
+                    android:id="@+id/leave_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/margin_45dp"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textsize7"
+                    android:hint="请输入请假天数" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/layer_top_bottom_grayline_whitebg"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="请假类型"
+                    android:textColor="@color/app_color_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                />
+                <TextView
+                    android:id="@+id/atten_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/ic_black_rigth"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/app_color_bg"
+                    android:gravity="right|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/Gainsboro"
+                    tools:text="sda"
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

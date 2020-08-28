@@ -2,6 +2,7 @@ package com.yfy.app.net;
 
 import com.yfy.app.net.atten.*;
 import com.yfy.app.net.maintain.*;
+import com.yfy.app.net.tea_evaluate.*;
 import com.yfy.app.net.user.*;
 import com.yfy.final_tag.TagFinal;
 import org.simpleframework.xml.Element;
@@ -88,35 +89,27 @@ public class ReqBody {
     public OfficeReq officeReq;
 
 
-    /**
-     * -------------------box-----------------------
-     */
-//    @Element(name = TagFinal.BOX_GET_LEADER_LIST, required = false)
-//    public LeaderReq leaderReq;
-//    @Element(name = TagFinal.BOX_GET_COUNT_LEADER, required = false)
-//    public CLeaderReq cleaderReq;
-//    @Element(name = TagFinal.BOX_GET_COUNT_USER, required = false)
-//    public CUserReq cUserReq;
 
-    /**
-     * ----------------applied---------------------
-     */
-//    @Element(name = TagFinal.APPLIED_GET_PROJEDCT_STATE, required = false)
-//    public AppliedListReq appliedListReq;
-//
-//    @Element(name = TagFinal.APPLIED_GET_DETAIL, required = false)
-//    public AppliedItemReq applied_item_detail;
-//
-//    @Element(name = TagFinal.APPLIED_ADMIN_LIST, required = false)
-//    public AppliedAdminListReq applied_admin_list;
-//
-//    @Element(name = TagFinal.APPLIED_USER_LIST, required = false)
-//    public AppliedUserListReq applied_user_list;
-//
-//    @Element(name = TagFinal.NOTICE_GET_TEA, required = false)
-//    public GetTeaReq get_tea;
-//
-//    @Element(name = TagFinal.NOTICE_GET_STU, required = false)
-//    public GetStuReq get_stu;
+    //----------------tea evaluate----------------------
+
+
+    @Element(name = TagFinal.TEA_JUDGE_CLASS, required = false)
+    public JudgeAddReq judgeReq;
+
+    @Element(name = TagFinal.TEA_JUDGE_STATISTICS_CLASS, required = false)
+    public JudgeTjReq judgetjReq;
+
+    @Element(name = TagFinal.TEA_JUDGE_STATISTICS, required = false)
+    public JudgeChartReq judgechartReq;
+
+    @Element(name = TagFinal.TEA_JUDGE_YEAR, required = false)
+    public YearReq year_Req;
+
+    @Element(name = TagFinal.TEA_ADD_PARAMETER, required = false)
+    public JudgeparaReq para_Req;
+
+
+    @Element(name = TagFinal.TEA_JUDGE_INFO, required = false)
+    public JudgeItemReq item_Req;
 
 }

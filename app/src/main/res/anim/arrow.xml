@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0"
+    android:toXDelta="0"
+    android:fromYDelta="10%p"
+    android:toYDelta="-100%p"
+    android:duration="2000"
+    android:repeatCount="infinite"
+
+    android:repeatMode="restart" >
+</translate>
+<!-- android:repeatCount=""-》设置次数：infinite:无数次-->
