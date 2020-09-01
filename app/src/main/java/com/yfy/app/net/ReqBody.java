@@ -1,6 +1,8 @@
 package com.yfy.app.net;
 
 import com.yfy.app.net.atten.*;
+import com.yfy.app.net.base.UserGetCurrentTermReq;
+import com.yfy.app.net.base.UserGetTermListReq;
 import com.yfy.app.net.maintain.*;
 import com.yfy.app.net.tea_evaluate.*;
 import com.yfy.app.net.user.*;
@@ -13,6 +15,15 @@ import org.simpleframework.xml.Root;
 @Root(name = "Body", strict = false)
 public class ReqBody {
 
+    //-------------------base------------------
+
+    @Element(name = TagFinal.USER_GET_CURRENT_TERM, required = false)
+    public UserGetCurrentTermReq userGetCurrentTermReq;
+
+    @Element(name = TagFinal.USER_GET_TERM_LIST, required = false)
+    public UserGetTermListReq userGetTermListReq;
+    //----------------------------user---------------------
+
     @Element(name = TagFinal.GET_USER_ADMIN, required = false)
     public AdminReq adminReq;
 
@@ -22,8 +33,6 @@ public class ReqBody {
     @Element(name = TagFinal.SCHOOL_NEWS_BANNER, required = false)
     public NewBannerReq newBannerReq;
 
-    @Element(name = TagFinal.GET_CURRENT_TERM, required = false)
-    public GetTermReq get_current_term;
 
     @Element(name = TagFinal.READNOTICE, required = false)
     public ReadNoticeReq readnotice;

@@ -2,6 +2,8 @@ package com.yfy.app.net;
 
 
 import com.yfy.app.net.atten.*;
+import com.yfy.app.net.base.UserGetCurrentTermRes;
+import com.yfy.app.net.base.UserGetTermListRes;
 import com.yfy.app.net.maintain.*;
 import com.yfy.app.net.tea_evaluate.*;
 import com.yfy.app.net.user.*;
@@ -17,16 +19,23 @@ import org.simpleframework.xml.Root;
 @Root(name = Base.BODY)
 public class ResBody {
 
+    //--------------------base------------------------
+
+    @Element(name = TagFinal.USER_GET_CURRENT_TERM +Base.RESPONSE, required = false)
+    public UserGetCurrentTermRes userGetCurrentTermRes;
+
+    @Element(name = TagFinal.USER_GET_TERM_LIST +Base.RESPONSE, required = false)
+    public UserGetTermListRes userGetTermListRes;
+
+    //-------------------user----------------------
 
     @Element(name = TagFinal.NEWS_MENU+Base.RESPONSE, required = false)
     public NewMenuRes news_menu;
 
-    @Element(name = TagFinal.SCHOOL_NEWS_BANNER+"Response", required = false)
+    @Element(name = TagFinal.SCHOOL_NEWS_BANNER+Base.RESPONSE, required = false)
     public NewBannerRes news_banner;
 
 
-    @Element(name = TagFinal.GET_CURRENT_TERM+"Response", required = false)
-    public GetTermRes getCurrentTermResponse;
 
     @Element(name = TagFinal.GETNOTICENUM+"Response", required = false)
     public NticeNumRes getnoticenumResponse;

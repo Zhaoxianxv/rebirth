@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.yfy.app.WebActivity;
 import com.yfy.app.info_submit.constants.InfosConstant;
 import com.yfy.app.info_submit.utils.JsonStrParser;
+import com.yfy.base.Base;
 import com.yfy.base.activity.WcfActivity;
 import com.yfy.final_tag.AppLess;
 import com.yfy.final_tag.ConvertObjtect;
@@ -51,7 +52,7 @@ public  class AuthenticationActivity extends WcfActivity {
 	void setWeb(){
 		Intent intent = new Intent(mActivity, WebActivity.class);
 		Bundle b = new Bundle();
-		b.putString(TagFinal.URI_TAG, TagFinal.POINT_PATH);
+		b.putString(TagFinal.URI_TAG, Base.POINT_PATH);
 		b.putString(TagFinal.TITLE_TAG, "招生须知");
 		intent.putExtras(b);
 		startActivity(intent);
@@ -60,7 +61,6 @@ public  class AuthenticationActivity extends WcfActivity {
 	void setSubmit(){
 		baobaoName = baobao_et.getText().toString().trim();
 		tel_number = mishi_et.getText().toString().trim();
-
 		if (StringJudge.isEmpty(baobaoName) || StringJudge.isEmpty(tel_number)) {
 			Toast.makeText(AuthenticationActivity.this, "请输入完整信息",Toast.LENGTH_SHORT).show();;
 		} else {

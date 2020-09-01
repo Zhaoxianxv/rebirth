@@ -19,7 +19,6 @@ import com.yfy.app.tea_evaluate.bean.ResultInfo;
 import com.yfy.app.tea_evaluate.bean.ResultJudge;
 import com.yfy.base.Base;
 import com.yfy.base.activity.WcfActivity;
-import com.yfy.dialog.AbstractDialog;
 import com.yfy.dialog.ConfirmAlbumWindow;
 import com.yfy.dialog.DialogTools;
 import com.yfy.final_tag.*;
@@ -319,7 +318,7 @@ public class RedactActivity extends WcfActivity implements Callback<ResEnv> {
         for ( ParamBean icon:info.getJudge_record()){
             if (icon.getType().equals("multifile")){
                 if (StringJudge.isNotEmpty(icon.getContent())){
-                    List<String> name= StringUtils.getListToString(info.getAttachment(),",");
+                    List<String> name= StringUtils.listToStringSplitCharacters(info.getAttachment(),",");
                     for (String s1:name){
                         ParamBean bean=new ParamBean();
                         String[] names=s1.split(Pattern.quote("/"));
@@ -332,18 +331,7 @@ public class RedactActivity extends WcfActivity implements Callback<ResEnv> {
                 }
             }
         }
-//        if (StringJudge.isNotEmpty(info.getAttachment())){
-//            List<String> name=StringUtils.getListToString(info.getAttachment(),",");
-//            for (String s1:name){
-//                        ParamBean bean=new ParamBean();
-//                        String[] names=s1.split(Pattern.quote("/"));
-//                        bean.setTitle(names[names.length-1]);
-//                        bean.setContent(s1);
-//                        bean.setId(icon.getId());
-//                        bean.setType("del");
-//                        dataList.add(bean);
-//            }
-//        }
+
         //--------------
 //        ParamBean icon=new ParamBean();
 //        icon.setType("icon");

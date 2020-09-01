@@ -21,7 +21,12 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 import com.google.gson.Gson;
+import com.yfy.app.net.ResEnv;
 import com.yfy.base.App;
 import com.yfy.base.Base;
 import com.yfy.base.InitUtils;
@@ -48,7 +53,7 @@ import com.yfy.view.SQToolBar;
  * 5、封装了toast()方法
  * 注：依赖： compile 'com.jakewharton:butterknife:7.0.1'
  */
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity  implements Callback<ResEnv> {
 
 
 
@@ -343,4 +348,16 @@ public class BaseActivity extends AppCompatActivity {
     public void onPageBack() {
         finish();
     }
+
+    @Override
+    public void onResponse(Call<ResEnv> call, Response<ResEnv> response) {
+
+
+    }
+
+    @Override
+    public void onFailure(Call<ResEnv> call, Throwable t) {
+
+    }
+
 }

@@ -10,8 +10,13 @@ import com.yfy.db.User;
 public class Base {
     public static String DB_NAME="yfydb";
 
+    public static final String USER_BASE_DATA = "get_stu_baseinfo";//获取个人中心基础数据
+    public static final String USER_BASE_UPDATA = "set_stu_baseinfo";//设置个人中心基础数据
+    public static final String SCHEDULE = "http://www.cdeps.sc.cn/kcb.aspx?sessionkey=";//教师课程表url+sessionkey
+    public static final String DEYU_KEY = "http://www.cdeps.sc.cn/showdykp.aspx?sessionkey=";//班级评比
+    public static final String POINT_PATH = "http://xsl.yfyit.com/detail.aspx?id=30072";//新生报名招生须知地址
 
-//http://gxxc.yfyit.com/service2.svc?singleWsdl
+
     public final static String URL = "http://xsl.yfyit.com/service2.svc";
     public final static String RETROFIT_URI = "http://xsl.yfyit.com/";
     //app更新地址
@@ -26,19 +31,42 @@ public class Base {
 
 
 
+
     public static final String TEM = "tem";//
+    public static final String ARR = "arr";//
     public static final String BODY = "Body";//
     public static final String RESPONSE = "Response";//
     public static final String RESULT = "Result";//
     public static final String XMLNS = "xmlns";//
+
     public static final String session_key = "session_key";//
+    public static final String token = "token";//
     public static final String type = "type";//
     public static final String state = "state";//
+    //    public static final String fxid = "fxid";//
     public static final String page = "page";//
     public static final String size = "size";//
+    public static final String pagesize = "pagesize";//
+    public static final String date = "date";//
+    public static final String data = "data";//
     public static final String id = "id";//
+    public static final String index = "index";//
+    public static final String reason = "reason";//
+    public static final String name = "name";//
+    public static final String title = "title";//
+    public static final String content = "content";//
+    public static final String image = "image";//
+    public static final String voice = "voice";//
+    public static final String count = "count";//
+    public static final String can_edit = "can_edit";//
+    public static final String num = "num";//
+    public static final String phone = "phone";//
+    public static final String WCF_TXT = "wcf.txt";
+    public static final String error_code = "session_key不正确";
 
-    public final static String WCF_TXT = "wcf.txt";
+
+
+
 
 
 

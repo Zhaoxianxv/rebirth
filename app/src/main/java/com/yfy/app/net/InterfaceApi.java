@@ -19,9 +19,14 @@ public interface InterfaceApi {
     @POST("/Service2.svc")
     Call<ResEnv> login(@Body ReqEnv Envelope);
 
-    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.GET_CURRENT_TERM})
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.USER_GET_CURRENT_TERM})
     @POST(Base.POST_URI)
     Call<ResEnv> get_current_term(@Body ReqEnv Envelope);
+
+    @Headers({Base.Content_Type, Base.SOAP_ACTION+TagFinal.USER_GET_TERM_LIST})
+    @POST(Base.POST_URI)
+    Call<ResEnv> get_term_list(@Body ReqEnv Envelope);
+
 
 
 

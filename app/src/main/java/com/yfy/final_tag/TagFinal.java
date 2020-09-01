@@ -110,12 +110,6 @@ public  class TagFinal {
     public static final String  SCHOOL_NEWS_BANNER = "getscroll_picture";
 
 
-    public static final String USER_BASE_DATA = "get_stu_baseinfo";//获取个人中心基础数据
-    public static final String USER_BASE_UPDATA = "set_stu_baseinfo";//设置个人中心基础数据
-    public static final String SCHEDULE = "http://www.cdeps.sc.cn/kcb.aspx?sessionkey=";//教师课程表url+sessionkey
-    public static final String DEYU_KEY = "http://www.cdeps.sc.cn/showdykp.aspx?sessionkey=";//班级评比
-    public static final String POINT_PATH = "http://xsl.yfyit.com/detail.aspx?id=30072";//新生报名招生须知地址
-
     public static final String AUTHEN_BMCX = "bmcx";//
     public static final String AUTHEN_GET_STU = "getstuxx";//获取学生
     public static final String AUTHEN_SET_STU = "setstuxx";//设置学生信息
@@ -128,8 +122,9 @@ public  class TagFinal {
     /**
      * -------------------user相关-------------------
      */
-    public static final String USER_GET_TERM = "gettermlistnew";//获取学期列表
-    public static final String GET_CURRENT_TERM = "getCurrentTermnew";//获取当前学期
+    public static final String USER_GET_TERM_LIST = "gettermlistnew";//获取学期列表
+    public static final String USER_GET_CURRENT_TERM = "getCurrentTermnew";//获取当前学期
+
     public static final String USER_GET_MOBILE = "get_Mobile";//获取电话
     public static final String USER_SET_MOBILE = "set_Mobile";//置电话
     public static final String GETNOTICENUM = "getnoticenum";//小红点

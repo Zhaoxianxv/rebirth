@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 public class StringUtils {
 
 	//---------------------返回List<String>-----------------
-	public static List<String> getListToString(String content,String tag){
+	public static List<String> listToStringSplitCharacters(String content, String tag){
 		List<String> list = Arrays.asList(content.split(Pattern.quote(tag)));
 		return new ArrayList<>(list);
 	}
@@ -98,6 +98,9 @@ public class StringUtils {
 	}
 
 	public static String stringToGetTextJoint(String type, Object... args){
+		return String.format(type,args);
+	}
+	public static String getTextJoint(String type, Object... args){
 		return String.format(type,args);
 	}
 

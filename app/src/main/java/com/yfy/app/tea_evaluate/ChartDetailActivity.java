@@ -265,7 +265,7 @@ public class ChartDetailActivity extends WcfActivity {
         detai.setView_type(TagFinal.TYPE_ITEM);
         list.add(detai);
         if (StringJudge.isNotEmpty(info.getAttachment())){
-            List<String> name=StringUtils.getListToString(info.getAttachment(),",");
+            List<String> name=StringUtils.listToStringSplitCharacters(info.getAttachment(),",");
             for (int i=0; i<name.size();i++){
                 String s1=name.get(i);
                 TeaDetail detail=new TeaDetail();

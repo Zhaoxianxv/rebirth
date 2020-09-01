@@ -86,16 +86,7 @@ public class RebirthMainActivity extends WcfActivity implements Callback<ResEnv>
         }
     }
     private void initSQToolbar(){
-//        assert toolbar!=null;
-//        toolbar.cancelNavi();
-//        toolbar.setTitle("");
-//        toolbar.addMenu(TagFinal.ONE_INT, R.drawable.main_oa_set);
-//        toolbar.setOnMenuClickListener(new SQToolBar.OnMenuClickListener() {
-//            @Override
-//            public void onClick(View view, int position) {
-//
-//            }
-//        });
+
         title.setText("成都市新生路小学");
     }
 
@@ -146,7 +137,8 @@ public class RebirthMainActivity extends WcfActivity implements Callback<ResEnv>
 
     @OnClick(R.id.bar_menu)
     void setMenu(){
-        startActivity(new Intent(mActivity,VsionDetailActivity.class));
+//        startActivity(new Intent(mActivity,VsionDetailActivity.class));
+        startActivity(new Intent(mActivity,SelectedTermActivity.class));
     }
 
     @OnClick(R.id.user_one)
