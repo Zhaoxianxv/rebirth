@@ -102,9 +102,9 @@ public class DetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     .apply(RequestOptions.bitmapTransform(new CircleCrop()))
                     .into(reHolder.head);
             reHolder.name.setText(reHolder.bean.getName());
-            reHolder.type.setText(StringUtils.getTextJoint("%1$s",reHolder.bean.getState()));
+            reHolder.type.setText(StringUtils.stringToGetTextJoint("%1$s",reHolder.bean.getState()));
             if (reHolder.bean.getState().equals("同意请假")){
-                reHolder.type.setText(StringUtils.getTextJoint("%1$s(待销假)",reHolder.bean.getState()));
+                reHolder.type.setText(StringUtils.stringToGetTextJoint("%1$s(待销假)",reHolder.bean.getState()));
             }
             reHolder.content.setText(reHolder.bean.getContent());
             reHolder.time.setText(reHolder.bean.getTime());

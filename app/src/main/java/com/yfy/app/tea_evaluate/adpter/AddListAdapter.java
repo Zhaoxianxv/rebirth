@@ -157,7 +157,7 @@ public class AddListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             re_selecte.name.setText(re_selecte.bean.getName());
             if (StringJudge.isEmpty(re_selecte.bean.getTitle())){
                 if (re_selecte.bean.getRemark().equals("")){
-                    re_selecte.grade.setText(StringUtils.getTextJoint("请选择%1$s",re_selecte.bean.getRemark()));
+                    re_selecte.grade.setText(StringUtils.stringToGetTextJoint("请选择%1$s",re_selecte.bean.getRemark()));
                 }else{
                     re_selecte.grade.setText(re_selecte.bean.getRemark());
                 }
@@ -335,7 +335,7 @@ public class AddListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     if (pic!=null){
                         pic.add(multi);
                     }
-                    bean.setTitle(StringUtils.subStr(multi.getList(),"|"));
+                    bean.setTitle(StringUtils.stringToArraysGetString(multi.getList(),"|"));
                 }
             });
             multi.setDeleteClickCallback(new MultiPictureView.DeleteClickCallback() {

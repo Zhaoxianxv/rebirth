@@ -133,7 +133,7 @@ public class PhoneCodectivity extends WcfActivity implements Callback<ResEnv> {
             send_code.setBackgroundResource(R.drawable.radius4_graybg_grayline);
             send_code.setTextColor(ColorRgbUtil.getBaseColor());
             send_code.setClickable(false);
-            send_code.setText(StringUtils.getTextJoint("(%1$d)重试", millisUntilFinished / 1000 ));
+            send_code.setText(StringUtils.stringToGetTextJoint("(%1$d)重试", millisUntilFinished / 1000 ));
         }
     }
 

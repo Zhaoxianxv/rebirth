@@ -111,8 +111,8 @@ public class BarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
             reHolder.score_one.setLayoutParams(one);
             reHolder.score_two.setLayoutParams(two);
-            reHolder.score_one.setText(StringUtils.getTextJoint("得分:%1$s",new DecimalFormat(".0").format(score)));
-            reHolder.score_two.setText(StringUtils.getTextJoint("中分:%1$s",new DecimalFormat(".0").format(min_score)));
+            reHolder.score_one.setText(StringUtils.stringToGetTextJoint("得分:%1$s",new DecimalFormat(".0").format(score)));
+            reHolder.score_two.setText(StringUtils.stringToGetTextJoint("中分:%1$s",new DecimalFormat(".0").format(min_score)));
         }
         if (holder instanceof TopHolder) {
             TopHolder top = (TopHolder) holder;

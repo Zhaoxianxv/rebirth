@@ -106,7 +106,7 @@ public class MaintainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     break;
                 case "同意请假":
                     reHolder.state.setTextColor(ColorRgbUtil.getForestGreen());
-                    reHolder.state.setText(StringUtils.getTextJoint("%1$s(待销假)",reHolder.bean.getDealstate()));
+                    reHolder.state.setText(StringUtils.stringToGetTextJoint("%1$s(待销假)",reHolder.bean.getDealstate()));
                     break;
                 case "驳回请假":
                     reHolder.state.setTextColor(mContext.getResources().getColor(R.color.DarkRed));

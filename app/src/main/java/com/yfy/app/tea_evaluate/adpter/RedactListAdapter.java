@@ -169,7 +169,7 @@ public class RedactListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         } else if (holder instanceof RecyclerPicHolder) {
             RecyclerPicHolder re_pic = (RecyclerPicHolder) holder;
             re_pic.bean=dataList.get(position);
-            re_pic.name.setText(StringUtils.getTextJoint("新增:%1$s",re_pic.bean.getTitle()));
+            re_pic.name.setText(StringUtils.stringToGetTextJoint("新增:%1$s",re_pic.bean.getTitle()));
             re_pic.remark.setVisibility(View.GONE);
 
         } else if (holder instanceof BaseHolder) {

@@ -160,7 +160,7 @@ public class DetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 topHolder.top_time_one.setText(HtmlTools.getHtmlString(base_bg,"报修金额(元)：",text_color,bean.getMoney()));
             }
             topHolder.top_type.setText(HtmlTools.getHtmlString(base_bg,"报修部门：",text_color,bean.getDepartment_name()));
-            topHolder.top_place.setText(HtmlTools.getHtmlString(base_bg,"报修物品：",text_color,StringUtils.getTextJoint("%1$s(%2$s)",bean.getAddress(),bean.getGoods())));
+            topHolder.top_place.setText(HtmlTools.getHtmlString(base_bg,"报修物品：",text_color,StringUtils.stringToGetTextJoint("%1$s(%2$s)",bean.getAddress(),bean.getGoods())));
 
             topHolder.top_content.setText(HtmlTools.getHtmlString(base_bg,"报修详情：",text_color,bean.getContent()));
             List<String> photos= new ArrayList<>();

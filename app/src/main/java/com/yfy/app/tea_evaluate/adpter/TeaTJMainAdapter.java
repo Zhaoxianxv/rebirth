@@ -80,7 +80,7 @@ public class TeaTJMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             RecyclerDateHolder reHolder = (RecyclerDateHolder) holder;
             reHolder.bean=dataList.get(position);
             reHolder.name.setText(reHolder.bean.getTitle());
-            reHolder.date.setText(StringUtils.getTextJoint("%1$s个",reHolder.bean.getScore()));
+            reHolder.date.setText(StringUtils.stringToGetTextJoint("%1$s个",reHolder.bean.getScore()));
         }
 //        if (holder instanceof PieHolder) {
 //            PieHolder pie = (PieHolder) holder;
@@ -188,7 +188,7 @@ public class TeaTJMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 }
             }
 
-            mChart.setCenterText(StringUtils.getTextJoint("总分:%1$s",StringUtils.getTwoTofloat(all_score)));
+            mChart.setCenterText(StringUtils.stringToGetTextJoint("总分:%1$s",StringUtils.stringToGetTwoToDecimals(all_score)));
             // IMPORTANT: In a PieChart, no values (Entry) should have the same
             // xIndex (even if from different DataSets), since no values can be
             // drawn above each other.

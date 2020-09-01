@@ -16,7 +16,6 @@ import com.yfy.app.maintainnew.bean.DepTag;
 import com.yfy.app.maintainnew.bean.GoodBean;
 import com.yfy.base.Base;
 import com.yfy.base.activity.WcfActivity;
-import com.yfy.dialog.AbstractDialog;
 import com.yfy.dialog.ConfirmAlbumWindow;
 import com.yfy.final_tag.*;
 import com.yfy.jpush.Logger;
@@ -272,7 +271,7 @@ public class MaintainNewAddActivity extends WcfActivity {
                     office_name=data.getStringExtra(TagFinal.NAME_TAG);
                     GoodBean bean=data.getParcelableExtra(TagFinal.OBJECT_TAG);
                     good_name=bean.getGoodsname();
-                    select_dep.setText(StringUtils.getTextJoint("%1$s(%2$s)",office_name,good_name));
+                    select_dep.setText(StringUtils.stringToGetTextJoint("%1$s(%2$s)",office_name,good_name));
                     good_id=bean.getGoodsid();
 
                     classid=bean.getLogisticsclassid();

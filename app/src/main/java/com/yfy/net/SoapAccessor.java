@@ -196,7 +196,6 @@ public class SoapAccessor {
                     .append(entry.getKey())
                     .append(">");
             if (i==0){
-//                Log.e(TAG, "getParamsXml: "+entry.getKey());
             }
 
             i++;

@@ -151,7 +151,7 @@ public class DetailAdminAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             topHolder.top_time.setText(bean.getSubmit_time());
             topHolder.top_tell.setText("");
             topHolder.top_type.setText(HtmlTools.getHtmlString(base_bg,"报修部门：",text_color,bean.getDepartment_name()));
-            topHolder.top_place.setText(HtmlTools.getHtmlString(base_bg,"报修物品：",text_color,StringUtils.getTextJoint("%1$s(%2$s)",bean.getAddress(),bean.getGoods())));
+            topHolder.top_place.setText(HtmlTools.getHtmlString(base_bg,"报修物品：",text_color,StringUtils.stringToGetTextJoint("%1$s(%2$s)",bean.getAddress(),bean.getGoods())));
             if (bean.getMoney().equals("0")){
                 topHolder.top_time_one.setText(HtmlTools.getHtmlString(base_bg,"报修时间：",text_color,bean.getSubmit_time()));
             }else{
