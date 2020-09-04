@@ -132,5 +132,16 @@ public class BaseRes {
     public void setGradelist(List<GradeBean> gradelist) {
         this.gradelist = gradelist;
     }
+    /**
+     * -----------------main_item process type-------------
+     */
+    private List<MainValue> data;
 
+    public List<MainValue> getData() {
+        return data;
+    }
+
+    public void setData(List<MainValue> data) {
+        this.data = data;
+    }
 }

@@ -1,19 +1,13 @@
 package com.yfy.app;
 
 import android.app.Activity;
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.yfy.app.bean.KeyValue;
-import com.yfy.base.Base;
-import com.yfy.final_tag.StringJudge;
 import com.yfy.final_tag.TagFinal;
-import com.yfy.glide.GlideTools;
+import com.yfy.greendao.KeyValueDb;
 import com.yfy.rebirth.R;
 
 import java.util.ArrayList;
@@ -26,7 +20,7 @@ import java.util.List;
 public class MainSetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Activity mContext;
-    private List<KeyValue> dataList;
+    private List<KeyValueDb> dataList;
     private int loadState = 2;
 
     public MainSetAdapter(Activity mContext) {
@@ -34,14 +28,12 @@ public class MainSetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         this.dataList = new ArrayList<>();
 
     }
-
-    public void setDataList(List<KeyValue> dataList) {
+    public void setDataList(List<KeyValueDb> dataList) {
         this.dataList = dataList;
     }
 
     @Override
     public int getItemViewType(int position) {
-        // 最后一个item设置为FooterView
         return dataList.get(position).getView_type();
     }
 
@@ -62,9 +54,7 @@ public class MainSetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (holder instanceof ItemHolder){
             ItemHolder iHolder = (ItemHolder) holder;
             iHolder.bean = dataList.get(position);
-            iHolder.index=position;
             iHolder.name.setText(iHolder.bean.getName());
-
 
         }
 
@@ -79,23 +69,15 @@ public class MainSetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private class ItemHolder extends RecyclerView.ViewHolder {
 
         public TextView name;
-        public TextView count;
-        public AppCompatImageView icon;
-        private RelativeLayout layout;
-        private int index;
-        KeyValue bean;
+        KeyValueDb bean;
         public ItemHolder(View itemView) {
             super(itemView);
-
-            layout=itemView.findViewById(R.id.oa_item_layout);
-            layout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
+            name =  itemView.findViewById(R.id.main_set_item_name);
         }
     }
+
+
+
 
     /**
      * 设置上拉加载状态
@@ -106,6 +88,7 @@ public class MainSetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         this.loadState = loadState;
         notifyDataSetChanged();
     }
+
 
 
 }

@@ -150,5 +150,22 @@ public class UserPreferences extends Preferences {
 
 
 
+    /**
+     * 保存主页模块顺序
+     */
+    public void saveIndex(String index_s){
+        saveString("main_index",index_s);
+    }
+    public String getIndex(){
+        return getString("main_index","");
+    }
+
+    public void saveUserSetView(String name) {
+        saveString("user_set_view", name);
+    }
+    public String getUserSetView() {
+        return getString("user_set_view","");
+    }
+
 
 }
